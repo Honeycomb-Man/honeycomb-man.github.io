@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4682b4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    padding-bottom: 5rem; /* To avoid content being hidden by the footer */
+}
+
+section {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#planet-visual {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+.planet-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#alien-species-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#alien-species-form label {
+    font-weight: bold;
+}
+
+#alien-species-form input,
+#alien-species-form textarea,
+#alien-species-form button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#alien-species-form button {
+    background-color: #4682b4;
+    color: white;
+    cursor: pointer;
+}
+
+#language-generator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#language-generator-form input,
+#language-generator-form button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#language-generator-form button {
+    background-color: #4682b4;
+    color: white;
+    cursor: pointer;
+}
+
+#generated-language {
+    margin-top: 1rem;
+}
+
+#word-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#word-list li {
+    background-color: #e0e0e0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.explore-link {
+    display: inline-block;
+    background-color: #4682b4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #4682b4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
