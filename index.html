@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Planetary Playground</h1>
+    </header>
+
+    <main>
+        <section id="planet-builder">
+            <h2>Planet Builder</h2>
+            <p>Design your planet's size, gravity, atmosphere, and more.</p>
+            <div id="planet-visual"></div>
+            <div class="planet-controls">
+                <label for="planet-size">Size:</label>
+                <input type="range" id="planet-size" name="planet-size" min="50" max="200" value="100">
+                <label for="planet-color">Color:</label>
+                <input type="color" id="planet-color" name="planet-color" value="#ff0000">
+            </div>
+        </section>
+
+        <section id="alien-species-creator">
+            <h2>Create Alien Species</h2>
+            <p>Upload images and describe the culture of your alien species.</p>
+            <form id="alien-species-form">
+                <label for="alien-image">Alien Image:</label>
+                <input type="file" id="alien-image" name="alien-image" accept="image/*">
+                <label for="alien-culture">Culture:</label>
+                <textarea id="alien-culture" name="alien-culture" rows="4"></textarea>
+                <label for="alien-biology">Biological Traits:</label>
+                <textarea id="alien-biology" name="alien-biology" rows="4"></textarea>
+                <button type="submit">Create Species</button>
+            </form>
+        </section>
+
+        <section id="alien-language-generator">
+            <h2>Alien Language Generator</h2>
+            <p>Enter some base sounds (syllables) separated by commas, and we'll generate some words for your alien language.</p>
+            <form id="language-generator-form">
+                <label for="base-sounds">Base Sounds (e.g., za, ro, ki):</label>
+                <input type="text" id="base-sounds" name="base-sounds" value="za,ro,ki,mu,ne">
+                <button type="submit">Generate Language</button>
+            </form>
+            <div id="generated-language">
+                <h3>Generated Words:</h3>
+                <ul id="word-list"></ul>
+            </div>
+        </section>
+
+        <section id="explore-planets">
+            <h2>Explore Other Planets</h2>
+            <p>Visit and vote on planets created by other users.</p>
+            <a href="explore.html" class="explore-link">Explore in a Grid</a>
+            <a href="map.html" class="explore-link">Explore on a Map</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Planetary Playground</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: #3672a4;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
